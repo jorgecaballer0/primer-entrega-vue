@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <lista />
+    <LoginComponent />
+    <RegistroComponent />
+    <CarritoComponent />
+    <InfoComponent />
+    <ListadoComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CarritoComponent from "./components/Carrito.vue";
+import InfoComponent from "./components/Info.vue";
+import ListadoComponent from "./components/Listado.vue";
+import LoginComponent from "./components/Login.vue";
+import RegistroComponent from "./components/Registro.vue";
+import Lista from "./components/Tabla/Lista.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ListadoComponent,
+    LoginComponent,
+    RegistroComponent,
+    CarritoComponent,
+    InfoComponent,
+    Lista,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
