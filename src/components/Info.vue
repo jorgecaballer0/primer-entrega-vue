@@ -20,7 +20,10 @@
           <p
             class="text-sm font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            + detalles
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
+            tenetur. Nisi assumenda voluptas, culpa dignissimos nobis
+            voluptatum. Est molestiae laborum, culpa commodi animi quod
+            explicabo consectetur recusandae deserunt optio blanditiis!
           </p>
         </div>
         <div class="flex items-center justify-between">
