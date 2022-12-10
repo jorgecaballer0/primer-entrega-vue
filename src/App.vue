@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <lista />
     <LoginComponent />
     <RegistroComponent />
     <CarritoComponent />
@@ -15,7 +14,6 @@ import InfoComponent from "./components/Info.vue";
 import ListadoComponent from "./components/Listado.vue";
 import LoginComponent from "./components/Login.vue";
 import RegistroComponent from "./components/Registro.vue";
-import Lista from "./components/Tabla/Lista.vue";
 
 export default {
   name: "App",
@@ -25,9 +23,15 @@ export default {
     RegistroComponent,
     CarritoComponent,
     InfoComponent,
-    Lista,
   },
 };
 </script>
 
-<style></style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #ddd;
+}
+</style>
