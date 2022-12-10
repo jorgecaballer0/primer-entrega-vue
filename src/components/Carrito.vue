@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="text-center">
     <h2 class="text-xl font-semibold">Productos agregados al carrito</h2>
-    <table class="text-sm text-left text-gray-500 dark:text-gray-400">
+    <table
+      class="text-sm text-left text-gray-500 dark:text-gray-400 w-1/2 mx-auto my-6"
+    >
       <thead
         class="text-xs text-gray-800 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
       >

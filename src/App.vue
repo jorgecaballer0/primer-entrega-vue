@@ -27,11 +27,4 @@ export default {
 };
 </script>
 
-<style>
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background: #ddd;
-}
-</style>
+<style></style>

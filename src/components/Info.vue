@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h2 class="text-xl font-semibold">Información del producto</h2>
+  <div class="my-10">
+    <h2 class="text-xl text-center font-semibold">Información del producto</h2>
     <div
-      class="w-full max-w-2xl bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      class="w-full mx-auto max-w-3xl min-h-full bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <img class="p-8 rounded-t-lg" :src="imagen" alt="IMAGEN DEL PRODUCTO" />
       <div class="px-5 pb-5">
@@ -12,11 +12,19 @@
           NOMBRE DEL PRODUCTO
         </h5>
         <div>
-          <p>Info del producto</p>
-          <p>+ detalles</p>
+          <p
+            class="text-sm font-semibold tracking-tight text-gray-900 dark:text-white"
+          >
+            Info del producto
+          </p>
+          <p
+            class="text-sm font-semibold tracking-tight text-gray-900 dark:text-white"
+          >
+            + detalles
+          </p>
         </div>
         <div class="flex items-center justify-between">
-          <span class="text-3xl font-bold text-gray-900 dark:text-white"
+          <span class="text-2xl font-bold text-gray-900 dark:text-white"
             >$ PRECIO DEL PRODUCTO</span
           >
           <a
