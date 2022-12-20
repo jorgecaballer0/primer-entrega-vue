@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-md p-4 my-10 bg-white border border-gray-200 rounded-lg shadow-md mx-auto w-full sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+    class="w-full max-w-md p-4 mx-auto my-10 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
   >
     <form class="space-y-6" action="#">
       <h5 class="text-xl font-medium text-gray-900 dark:text-white">
@@ -59,8 +59,6 @@ export default {
   data() {
     return {};
   },
-
-  mounted() {},
 
   methods: {},
 };

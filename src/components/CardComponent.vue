@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-sm flex flex-col justify-center items-center bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+    class="flex flex-col items-center justify-center max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
   >
     <img
       class="rounded-t-lg"

@@ -1,7 +1,7 @@
 <template>
   <div class="my-10">
-    <h1 class="text-xl text-center font-semibold">Lista de productos</h1>
-    <div class="flex gap-8 mx-6 flex-wrap">
+    <h1 class="text-xl font-semibold text-center">Lista de productos</h1>
+    <div class="flex flex-wrap gap-8 mx-6">
       <CardComponent
         v-for="(producto, i) of productos"
         :key="i"
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import CardComponent from "./Card.vue";
+import CardComponent from "./CardComponent.vue";
 export default {
   components: { CardComponent },
-  name: "ListadoComponent",
+  name: "ListComponent",
   data() {
     return {
       productos: [

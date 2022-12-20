@@ -1,8 +1,8 @@
 <template>
   <div class="my-10">
-    <h2 class="text-xl text-center font-semibold">Información del producto</h2>
+    <h2 class="text-xl font-semibold text-center">Información del producto</h2>
     <div
-      class="w-full mx-auto max-w-3xl min-h-full bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      class="w-full max-w-3xl min-h-full mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <img class="p-8 rounded-t-lg" :src="imagen" alt="IMAGEN DEL PRODUCTO" />
       <div class="px-5 pb-5">
@@ -48,8 +48,6 @@ export default {
   data() {
     return {};
   },
-
-  mounted() {},
 
   methods: {},
 };
