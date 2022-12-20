@@ -14,10 +14,12 @@
         >
         <input
           type="email"
+          v-model="email"
           name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           id="email"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-          placeholder="nombre@correo.com"
+          placeholder="tucorreo@email.com"
           required
         />
       </div>
@@ -29,9 +31,10 @@
         >
         <input
           type="password"
+          v-model="password"
           name="password"
           id="password"
-          placeholder="••••••••"
+          placeholder="Contraseña"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
           required
         />
@@ -44,7 +47,9 @@
       </button>
       <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
         No estás registrado?
-        <a href="#" class="text-blue-700 hover:underline dark:text-blue-500"
+        <a
+          @click="cambiarRuta({ path: '/registrarse' })"
+          class="text-blue-700 cursor-pointer hover:underline dark:text-blue-500"
           >Crear una cuenta</a
         >
       </div>
@@ -57,11 +62,16 @@ export default {
   name: "LoginComponent",
 
   data() {
-    return {};
+    return {
+      email: "",
+      password: "",
+    };
   },
 
-  methods: {},
+  methods: {
+    cambiarRuta(ruta) {
+      this.$router.push(ruta);
+    },
+  },
 };
 </script>
-
-<style></style>

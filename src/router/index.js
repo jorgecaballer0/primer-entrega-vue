@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ListView from "../views/ListView.vue";
+import HomeView from "../views/HomeView.vue";
+import PageNotFound from "../views/PageNotFoundView.vue";
+
 
 Vue.use(VueRouter);
 
@@ -8,7 +10,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: ListView,
+    component: HomeView,
   },
   {
     path: "/ingresar",
@@ -23,8 +25,8 @@ const routes = [
     component: () => import("../views/RegisterView.vue"),
   },
   {
-    path: "/detalles",
-    name: "detalles",
+    path: "/detalle/:id",
+    name: "detalle",
 
     component: () => import("../views/InfoView.vue"),
   },
@@ -34,6 +36,7 @@ const routes = [
 
     component: () => import("../views/CartView.vue"),
   },
+  { path: "*", component: PageNotFound },
 ];
 
 const router = new VueRouter({

@@ -9,7 +9,7 @@
         <h5
           class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
         >
-          NOMBRE DEL PRODUCTO
+          NOMBRE
         </h5>
         <div>
           <p

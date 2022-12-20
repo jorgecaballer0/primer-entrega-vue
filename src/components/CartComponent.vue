@@ -2,7 +2,7 @@
   <div class="text-center">
     <h2 class="text-xl font-semibold">Productos agregados al carrito</h2>
     <table
-      class="text-sm text-left text-gray-500 dark:text-gray-400 w-1/2 mx-auto my-6"
+      class="w-1/2 mx-auto my-6 text-sm text-left text-gray-500 dark:text-gray-400"
     >
       <thead
         class="text-xs text-gray-800 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
@@ -40,6 +40,8 @@
       </tbody>
     </table>
     <button
+      type="button"
+      @click="cambiarRuta({ path: '/' })"
       class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     >
       Volver
@@ -74,6 +76,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    cambiarRuta(ruta) {
+      this.$router.push(ruta);
+    },
   },
 };
 </script>

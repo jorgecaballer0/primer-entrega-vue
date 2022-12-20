@@ -1,7 +1,7 @@
 <template>
   <div class="my-10">
-    <h1 class="text-xl font-semibold text-center">Lista de productos</h1>
-    <div class="flex flex-wrap gap-8 mx-6">
+    <h1 class="my-6 text-4xl font-semibold text-center">Productos</h1>
+    <div class="flex flex-wrap justify-center gap-6 mx-6">
       <CardComponent
         v-for="(producto, i) of productos"
         :key="i"
@@ -13,50 +13,25 @@
 
 <script>
 import CardComponent from "./CardComponent.vue";
+import axios from "axios";
+
 export default {
   components: { CardComponent },
   name: "ListComponent",
   data() {
     return {
-      productos: [
-        {
-          nombre: "producto 1",
-          imagen: "../assets/logo.png",
-          marca: "1",
-          precio: "100",
-        },
-        {
-          nombre: "producto 2",
-          imagen: "../assets/logo.png",
-          marca: "2",
-          precio: "200",
-        },
-        {
-          nombre: "producto 3",
-          imagen: "../assets/logo.png",
-          marca: "3",
-          precio: "300",
-        },
-        {
-          nombre: "producto 4",
-          imagen: "../assets/logo.png",
-          marca: "4",
-          precio: "400",
-        },
-        {
-          nombre: "producto 5",
-          imagen: "../assets/logo.png",
-          marca: "5",
-          precio: "500",
-        },
-        {
-          nombre: "producto 6",
-          imagen: "../assets/logo.png",
-          marca: "6",
-          precio: "600",
-        },
-      ],
+      productos: [],
     };
+  },
+  created() {
+    // LLAMADA A API DE PRODUCTOS AXIOS
+    const GETURL = "https://63a23154a543280f776af0c4.mockapi.io/productos";
+    axios
+      .get(GETURL)
+      .then((response) => {
+        this.productos = response.data;
+      })
+      .catch((err) => console.log(err));
   },
 };
 </script>
