@@ -2,7 +2,7 @@
   <div
     class="w-full max-w-md p-4 mx-auto my-10 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
   >
-    <form class="space-y-6" action="#">
+    <form class="space-y-6" @submit.prevent="ingresar">
       <h5 class="text-xl font-medium text-gray-900 dark:text-white">
         Ingresar
       </h5>
@@ -58,6 +58,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "LoginComponent",
 
@@ -65,12 +66,22 @@ export default {
     return {
       email: "",
       password: "",
+      usuario: [],
     };
   },
 
   methods: {
     cambiarRuta(ruta) {
       this.$router.push(ruta);
+    },
+    ingresar() {
+      const GETURL = "https://63a23154a543280f776af0c4.mockapi.io/usuarios";
+      axios
+        .get(GETURL)
+        .then((response) => {
+          this.usuario = response.data;
+        })
+        .catch((err) => console.log(err));
     },
   },
 };

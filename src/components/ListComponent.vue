@@ -7,6 +7,11 @@
         :key="i"
         :productos="producto"
       />
+      <!-- <info-component
+        v-for="(producto, i) of productos"
+        :key="i"
+        :producto="producto"
+      /> -->
     </div>
   </div>
 </template>
@@ -14,6 +19,7 @@
 <script>
 import CardComponent from "./CardComponent.vue";
 import axios from "axios";
+// import InfoComponent from "./InfoComponent.vue";
 
 export default {
   components: { CardComponent },
@@ -35,5 +41,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

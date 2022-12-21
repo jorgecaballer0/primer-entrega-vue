@@ -4,12 +4,12 @@
     <div
       class="w-full max-w-3xl min-h-full mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
-      <img class="p-8 rounded-t-lg" :src="imagen" alt="IMAGEN DEL PRODUCTO" />
+      <img class="p-8 rounded-t-lg" src="imagen" alt="nombre" />
       <div class="px-5 pb-5">
         <h5
           class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
         >
-          NOMBRE
+          nombre
         </h5>
         <div>
           <p
@@ -20,15 +20,12 @@
           <p
             class="text-sm font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
-            tenetur. Nisi assumenda voluptas, culpa dignissimos nobis
-            voluptatum. Est molestiae laborum, culpa commodi animi quod
-            explicabo consectetur recusandae deserunt optio blanditiis!
+            info
           </p>
         </div>
         <div class="flex items-center justify-between">
           <span class="text-2xl font-bold text-gray-900 dark:text-white"
-            >$ PRECIO DEL PRODUCTO</span
+            >$ precio</span
           >
           <a
             href="#"
@@ -48,9 +45,6 @@ export default {
   data() {
     return {};
   },
-
   methods: {},
 };
 </script>
-
-<style></style>
