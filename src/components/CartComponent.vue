@@ -42,6 +42,7 @@
             Productos: {{ this.carrito.length }}
           </th>
           <th scope="row" class="px-6 py-3 text-base">Total</th>
+          <!-- FALTA LA FUNCION PARA SUMAR EL PRECIO DE CADA PRODUCTO -->
           <td class="px-6 py-3">ACA VA EL TOTAL</td>
         </tr>
       </tfoot>

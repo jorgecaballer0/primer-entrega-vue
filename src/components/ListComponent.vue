@@ -7,11 +7,6 @@
         :key="i"
         :productos="producto"
       />
-      <!-- <info-component
-        v-for="(producto, i) of productos"
-        :key="i"
-        :producto="producto"
-      /> -->
     </div>
   </div>
 </template>

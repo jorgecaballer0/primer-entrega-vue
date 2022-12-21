@@ -1,4 +1,6 @@
 <template>
+  <!-- No puedo obtener los datos de la API para mostrarlos segun el ID de cada producto -->
+  
   <div class="my-10">
     <h2 class="text-xl font-semibold text-center">Información del producto</h2>
     <div
